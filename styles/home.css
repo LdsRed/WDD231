@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    background-color: #002f6c;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .profile{
+    display: flex;
+    align-items: center;
+}
+
+
+header img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+
+.menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.coursework, .location, .certificates {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: wheat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.coursework ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+
+.certificates .cert-list, .certificates .filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificates .cert-list button {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (min-width: 768px) {
+    nav ul {
+        display: block;
+    }
+
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .coursework, .location, .certificates {
+        flex: 1 1 30%;
+    }
+    
+    
+    .certificates .filters, .certificates  .cert-list {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .certificates .filters button {
+        margin: 10px;
+        flex: 1 1 45%;
+    }
+}
