@@ -7,6 +7,8 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
    }
 });
 
+document.getElementById("currentyear").innerText = new Date().getFullYear();
+document.getElementById("lastModified").innerText = "Last modified: " + document.lastModified;
 
 
 const courses = [
@@ -88,3 +90,48 @@ const courses = [
         completed: false
     }
 ]
+
+
+const courseContainer = document.querySelector("#cert-list");
+
+const reset = () => {
+    courseContainer.innerHTML = "";
+};
+
+
+
+const renderCertificates = (courseArr) => {
+  let certButtons = "";
+  courseArr.forEach((cert) => {
+    if(cert.completed){
+        certButtons += `
+        <button class="completed">${cert.subject} ${cert.number}</button>`;
+    }else{
+        certButtons+=`
+        <button class="cert-list-button">${cert.subject} ${cert.number}</button>`;
+    }
+    });
+    courseContainer.innerHTML = certButtons;
+};
+
+renderCertificates(courses);
+
+
+
+const filters = document.getElementById("filters");
+
+
+filters.addEventListener("click", (event) => {
+    if (event.target.id === "all") {
+        reset();
+        renderCertificates(courses);
+    } else if (event.target.id === "cse") {
+        reset();
+        const cse = courses.filter((course) => course.subject === "CSE");
+        renderCertificates(cse);
+    } else if (event.target.id === "wdd") {
+        reset();
+        const wdd = courses.filter((course) => course.subject === "WDD");
+        renderCertificates(wdd);
+    }
+});
