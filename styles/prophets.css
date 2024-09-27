@@ -1,0 +1,119 @@
+:root {
+    --background-color: #017ca5;
+    --black-color: black;
+    --white-color: #fff;
+    --background-second-color: #03aecb;
+    --card-temple-color: #e6e7e7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Book', sans-serif;
+}
+
+header{
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: var(--background-second-color);
+}
+
+header h1 {
+    padding: 20px;
+}
+
+header button {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin:10px;
+    cursor: pointer;
+    font-family: 'Fira Sans SemiBold', sans-serif;
+}
+
+
+button.selected {
+    background-color: white;
+    color: black;
+}
+
+main {
+    background-color: var(--card-temple-color);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--card-temple-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    row-gap: 20px;
+    border-radius: 5px;
+}
+
+section {
+    text-align: center;
+    background-color: var(--background-second-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    padding: 10px;
+    margin: 10px;
+}
+
+section:hover {
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-weight: 700;
+    margin: 20px;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+section h2 {
+    margin: 20px;
+}
+
+section p {
+    margin: 5px;
+}
+
+section img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 768px){
+    #cards {
+        background-color: #dddddd;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 325fr));
+        row-gap: 10px;
+        column-gap: 10px;   
+    }
+
+    main {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
