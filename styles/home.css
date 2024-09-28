@@ -228,8 +228,9 @@ footer p {
     }
 
     header .profile {
-        flex-direction: row;
+        margin-right: 40px;
     }
+
     .main-menu{
         display: block;
         margin-right: 40px;

@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Ubuntu",
+        "address": "https://ubuntu.com",
+        "phone": "N/A",
+        "website": "https://ubuntu.com",
+        "icon": "ubuntu.svg",
+        "membership": 3,
+        "additionalInfo": "Popular for servers and desktops, based on Debian."
+    },
+    {
+        "name": "Fedora",
+        "address": "https://getfedora.org",
+        "phone": "N/A",
+        "website": "https://getfedora.org",
+        "icon": "fedora.svg",
+        "membership": 2,
+        "additionalInfo": "Community-driven distribution sponsored by Red Hat."
+    },
+    {
+        "name": "Arch Linux",
+        "address": "https://archlinux.org",
+        "phone": "N/A",
+        "website": "https://archlinux.org",
+        "icon": "archlinx.svg",
+        "membership": 3,
+        "additionalInfo": "A lightweight and flexible distribution aimed at advanced users."
+    },
+    {
+        "name": "Debian",
+        "address": "https://debian.org",
+        "phone": "N/A",
+        "website": "https://debian.org",
+        "icon": "debian.svg",
+        "membership": 3,
+        "additionalInfo": "A stable and versatile base for many other distributions."
+    },
+    {
+        "name": "Linux Mint",
+        "address": "https://linuxmint.com",
+        "phone": "N/A",
+        "website": "https://linuxmint.com",
+        "icon": "linuxmint.svg",
+        "membership": 2,
+        "additionalInfo": "User-friendly, based on Ubuntu, ideal for beginners."
+    },
+    {
+        "name": "Manjaro",
+        "address": "https://manjaro.org",
+        "phone": "N/A",
+        "website": "https://manjaro.org",
+        "icon": "manjaro.svg",
+        "membership": 2,
+        "additionalInfo": "A beginner-friendly Arch-based distribution."
+    },
+    {
+        "name": "openSUSE",
+        "address": "https://opensuse.org",
+        "phone": "N/A",
+        "website": "https://opensuse.org",
+        "icon": "opensuse.svg",
+        "membership": 2,
+        "additionalInfo": "Geared towards developers and system administrators."
+    },
+    {
+        "name": "Pop!_OS",
+        "address": "https://pop.system76.com",
+        "phone": "N/A",
+        "website": "https://pop.system76.com",
+        "icon": "popos.svg",
+        "membership": 1,
+        "additionalInfo": "An Ubuntu-based distribution optimized for System76 hardware."
+    },
+    {
+        "name": "Kali Linux",
+        "address": "https://kali.org",
+        "phone": "N/A",
+        "website": "https://kali.org",
+        "icon": "kali.svg",
+        "membership": 3,
+        "additionalInfo": "Designed for penetration testing and ethical hacking."
+    },
+    {
+        "name": "Zorin OS",
+        "address": "https://zorinos.com",
+        "phone": "N/A",
+        "website": "https://zorinos.com",
+        "icon": "zorin.svg",
+        "membership": 1,
+        "additionalInfo": "Designed to make Linux accessible to newcomers."
+    }
+]

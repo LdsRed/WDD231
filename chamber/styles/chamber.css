@@ -1,0 +1,181 @@
+:root {
+    --background-color: #017ca5;
+    --black-color: black;
+    --white-color: #fff;
+    --background-second-color: #03aecb;
+    --card-temple-color: #e6e7e7;
+    --header-footer-color:#383838;
+    --body-color: #1d2021;
+    --body-background-color2:#f6f3db;
+    --site-font: 'Montserrat', sans-serif;
+    --site-font2:'Fira Sans Book', sans-serif;
+    --memberCard-background-color:#f8e886;
+    --memberCard-background-color2:#fbf0c9;
+    --h2-background-color:#a4b925;
+    --paragraph-color: #e17a19;
+    --paragraph-color2: #eeead5;
+    --background-color-template:#4f8726; 
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--site-font)
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--header-footer-color);  
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.header-container {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.header-container .logo {
+    background-color: white;
+    border-radius: 50%
+}
+
+.main-menu {
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.active {
+    color: yellow;
+}
+
+
+body {
+    background-color: var(--body-background-color2);
+}
+
+.hero-img {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.events-weather-container h2 {
+    margin-bottom: 20px;
+    background-color: var(--h2-background-color);
+    color: black;
+    padding: 10px;
+}
+
+.events, .current-weather, .weather-forecast {
+    border: solid 1px;
+    margin-bottom: 20px;
+}
+
+/*
+.business-names {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+*/
+.member-card {
+    border-radius: 5px;
+    background-color: var(--memberCard-background-color2);
+    margin-bottom: 20px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+
+.member{
+}
+
+.gold {
+    color: gold;    
+}
+
+.silver {
+    color: gray;    
+}
+
+footer{
+    background-color: var(--header-footer-color);
+    color:var(--paragraph-color2);
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.course-info, .contact-info {
+    line-height: 1.6;
+}
+
+.course-info{
+
+}
+
+.social-media {
+    text-align: center;
+}
+.social-media svg{
+    width: 50px;
+    margin: 10px;
+}
+
+.contact-info{
+
+}
+
+
+
+
