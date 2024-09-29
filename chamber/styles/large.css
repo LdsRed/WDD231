@@ -8,7 +8,8 @@
         margin: 20px;
     }
     .main-menu{
-        display: block;
+        display: flex;
+        flex-direction: row;
         margin-right: 40px;
     }
 
@@ -29,23 +30,64 @@
 
     h1 {
         margin-bottom: 20px;
-    }
-    .events-weather-container {
-        display: grid;
-        grid-template-columns: 1fr 300px 300px;
-        margin-bottom: 20px;
-        gap: 20px;
+        text-align: center;
     }
 
-    .business-names {
+    .toggle-view {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .toggle-view button {
+        background-color: var(--h2-background-color);
+        border-radius: 10px;
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .members-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(275px, 325fr));
-        gap: 20px;
+        gap: 10px;
     }
+
+
+    .members-container.list {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    
+    .members-container.list > .member-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 325fr));
+    }
+    
+    .member-card > img {
+        width: 100px;
+        height: 100px;
+        justify-self: center;
+        
+    }
+    
+    .member-card > .name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+
+
+
     footer {
         display: flex;
         justify-content: space-evenly;
     }
+
+
 
 
 }
