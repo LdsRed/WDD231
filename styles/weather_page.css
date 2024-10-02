@@ -19,10 +19,6 @@
     font-family: var(--global-font)
 }
 
-header {
-
-}
-
 body {
     background-color: var(--body-color);
     color: var(--paragraph-color);
@@ -54,6 +50,10 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
+}
+
+.card > p {
+    padding: 15px;
 }
 
 
