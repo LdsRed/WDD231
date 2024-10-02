@@ -1,0 +1,65 @@
+:root{
+    --body-color: #1d2021;
+    --paragraph-color: #e17a19;
+    --global-font:'Montserrat', sans-serif;
+    --h2-background-color:#a4b925;
+    --paragraph-color: #e17a19;
+    --paragraph-color2: #eeead5;
+    --background-color-template:#4f8726; 
+    --membership-background-color:#8ec07c;
+    --silverMember-background-color: #a89984;
+    --goldMember-background-color: #d79921;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--global-font)
+}
+
+header {
+
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--paragraph-color);
+}
+
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: var(--h2-background-color);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--silverMember-background-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    color: var(--body-color);
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top:40px;
+    font-size: 1.1rem;
+}
