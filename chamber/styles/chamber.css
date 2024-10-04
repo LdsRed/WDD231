@@ -42,6 +42,10 @@ header {
 
 }
 
+h1, h2, h3 {
+    word-break: break-word;
+}
+
 .header-container {
     display: flex;
     padding: 5px;
@@ -161,6 +165,134 @@ h1 {
 
 }
 
+.hero-container {
+    overflow: hidden;
+    background-color: var(--header-footer-color);
+    color: var(--white-color);
+    justify-content: center;
+    margin: 0 auto 2em;
+    text-align: center;
+    padding: 0 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+
+.hero-content {
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    width: 100%;
+    padding: 40px;
+}
+
+.hero-title{
+
+    font-weight: 700;
+    color: var(--h2-background-color);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-size: calc(1.8rem + 3vmin);
+}
+
+.hero-description {
+    opacity: 0.8;
+    font-size: calc(1.1rem + .5vmin);
+    line-height: 1.4;
+    margin: 0 auto 2em;
+}
+
+
+.form-subscription {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subscription input {
+    width: 100%;
+    padding: .75em 1em;
+    border-radius: 5px;
+    border: 1px solid var(--header-footer-color);
+    margin-bottom: 1em;
+}
+
+.form-subscription button {
+    width: 100%;
+    border-radius: 5px;
+    color: var(--header-footer-color);
+    min-height: 46px;
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    align-items: center;
+    align-self: flex-start;
+    background-color: var(--h2-background-color);
+    font-size: .9rem;
+    text-align: center;
+    padding: .75em 1em;
+    font-weight: 700;
+    border: none;
+    line-height: 1;
+    letter-spacing: calc(1rem * .025)
+}
+
+figure img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-section {
+    color: var(--white-color);
+    margin-bottom: 40px;
+}
+
+
+.home-events {
+    
+
+}
+
+.home-events, .weather-cards{
+    background-color: var(--header-footer-color);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    color: var(--paragraph-color2);
+    line-height: 1.6;
+
+}
+
+.company-spotlight {    
+
+}    
 
 footer{
     background-color: var(--header-footer-color);

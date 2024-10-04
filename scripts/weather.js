@@ -11,6 +11,7 @@ const card = document.querySelector(".card");
 
 
 
+
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     const desc = data.weather[0].description;

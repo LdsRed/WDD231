@@ -17,6 +17,9 @@
         display: none;
     }
 
+    .grid {
+        display: grid;
+    }
 
     main {
         display: block;
@@ -80,14 +83,40 @@
     }
 
 
+    .hero-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 325fr));
+    }
 
+    .form-subscription {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .weather-section {
+        display: grid;
+        grid-template-columns: 1fr .6fr .6fr;
+        gap: 20px;
+    }
+
+    .current-weather {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+    }
+    .current-weather > h3 {
+        grid-column: 1/3;
+        margin-bottom: 10px;
+    }
 
     footer {
         display: flex;
         justify-content: space-evenly;
     }
 
+}
 
+@media (min-width: 640px) {
 
 
 }
