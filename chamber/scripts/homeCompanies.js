@@ -1,18 +1,31 @@
+const homeMembers = document.querySelector("#company-spotlight");
 const memberJSON = './data/members.json';
-const membersContainer = document.querySelector(".members-container");
 
-async function fetchMembers(){
+
+
+
+async function fetchPremiumMembers(){
+    let premiumMembers = [];
+    try{
     const response = await fetch(memberJSON);
-    const members = await response.json();
-    displayMembers(members);
+    if (response.ok) {
+        premiumMembers = await response.json();
+        premiumMembers = premiumMembers.filter( member => member.membership > 1);
+        displayPremiumMembers(premiumMembers);
+    }
+    }catch(error){
+        console.log(error);
+    }
 }
 
 
 
+const displayPremiumMembers = (members) => {
+    homeMembers.innerHTML = '';
+    const shuffleMembers = members.sort(() => Math.random() - 0.5);
 
-const displayMembers = (members) => {
-    membersContainer.innerHTML = '';
-    members.forEach(member => {
+    shuffleMembers.length = 3
+    shuffleMembers.forEach(member => {
         const memberCard = document.createElement("div");
         memberCard.classList.add("member-card");
 
@@ -25,7 +38,7 @@ const displayMembers = (members) => {
         <p class="info"><strong>Info:</strong> ${member.additionalInfo}</p>
         `;
 
-        const membership = document.createElement("p")
+        const membership = document.createElement("p");
         membership.classList.add("membership");
         if(member.membership == 1) {
             membership.textContent = "Member";
@@ -40,9 +53,9 @@ const displayMembers = (members) => {
         }
 
         memberCard.appendChild(membership);
-        membersContainer.appendChild(memberCard);
+        homeMembers.appendChild(memberCard);
     });
 };  
 
 
-fetchMembers();
+fetchPremiumMembers();

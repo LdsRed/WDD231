@@ -269,7 +269,6 @@ figure img {
 
 .weather-section {
     color: var(--white-color);
-    margin-bottom: 40px;
 }
 
 
@@ -290,9 +289,10 @@ figure img {
 
 }
 
-.company-spotlight {    
-
-}    
+.company-spotlight {
+    margin-bottom: 40px;
+    
+}
 
 footer{
     background-color: var(--header-footer-color);

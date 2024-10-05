@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="scripts/chamber.js" defer></script>
     <script async src="scripts/weather.js" defer></script>
+    <script async src="scripts/homeCompanies.js" defer></script>
     <script type="module" async src="scripts/members.js" defer></script>
     <link rel="icon" href="images/icons8-arch-linux-color-96.png">
     <title>GNU/Linux Chamber of Commerce</title>
@@ -81,11 +82,12 @@
             </div>
             <div id="weather-forecast" class="weather-cards">
                 <h3>Weather Forecast</h3>
+                <div id="weather-forecast-days" class="weather-forecast-days"></div>
             </div>
         </section>
 
-        <section class="company-spotlight flex flex-col">
-            <div class="member-card"></div>
+        <section id="company-spotlight" class="company-spotlight flex flex-col">
+            
         </section>
     </main>
 

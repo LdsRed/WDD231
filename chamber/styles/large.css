@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (min-width: 600px) {
     header{
         flex-direction: row;
         align-items: end;
@@ -109,14 +109,15 @@
         margin-bottom: 10px;
     }
 
+    .company-spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+
     footer {
         display: flex;
         justify-content: space-evenly;
     }
-
-}
-
-@media (min-width: 640px) {
-
-
 }
