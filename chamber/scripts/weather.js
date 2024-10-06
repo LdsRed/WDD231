@@ -9,7 +9,7 @@ const weatherForecastDays = document.querySelector("#weather-forecast-days");
 
 const myKey = "36a1b80d1632c52e00d74ac3e92c50f7";
 const lat = "-27.45";
-const lon = "58.98";
+const lon = "-58.98";
 //const cnt = 3;
 const url = `https://api.openweathermap.org/data/2.5/`;
 

@@ -2,7 +2,6 @@
     {
         "name": "Ubuntu",
         "address": "https://ubuntu.com",
-        "phone": "N/A",
         "website": "https://ubuntu.com",
         "icon": "ubuntu.svg",
         "membership": 3,
@@ -11,7 +10,6 @@
     {
         "name": "Fedora",
         "address": "https://getfedora.org",
-        "phone": "N/A",
         "website": "https://getfedora.org",
         "icon": "fedora.svg",
         "membership": 2,
@@ -20,7 +18,6 @@
     {
         "name": "Arch Linux",
         "address": "https://archlinux.org",
-        "phone": "N/A",
         "website": "https://archlinux.org",
         "icon": "archlinx.svg",
         "membership": 3,
@@ -29,7 +26,6 @@
     {
         "name": "Debian",
         "address": "https://debian.org",
-        "phone": "N/A",
         "website": "https://debian.org",
         "icon": "debian.svg",
         "membership": 3,
@@ -38,7 +34,6 @@
     {
         "name": "Linux Mint",
         "address": "https://linuxmint.com",
-        "phone": "N/A",
         "website": "https://linuxmint.com",
         "icon": "linuxmint.svg",
         "membership": 2,
@@ -47,7 +42,6 @@
     {
         "name": "Manjaro",
         "address": "https://manjaro.org",
-        "phone": "N/A",
         "website": "https://manjaro.org",
         "icon": "manjaro.svg",
         "membership": 2,
@@ -56,7 +50,6 @@
     {
         "name": "openSUSE",
         "address": "https://opensuse.org",
-        "phone": "N/A",
         "website": "https://opensuse.org",
         "icon": "opensuse.svg",
         "membership": 2,
@@ -65,7 +58,6 @@
     {
         "name": "Pop!_OS",
         "address": "https://pop.system76.com",
-        "phone": "N/A",
         "website": "https://pop.system76.com",
         "icon": "popos.svg",
         "membership": 1,
@@ -74,7 +66,6 @@
     {
         "name": "Kali Linux",
         "address": "https://kali.org",
-        "phone": "N/A",
         "website": "https://kali.org",
         "icon": "kali.svg",
         "membership": 3,
@@ -83,7 +74,6 @@
     {
         "name": "Zorin OS",
         "address": "https://zorinos.com",
-        "phone": "N/A",
         "website": "https://zorinos.com",
         "icon": "zorin.svg",
         "membership": 1,

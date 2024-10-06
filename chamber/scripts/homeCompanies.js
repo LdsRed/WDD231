@@ -18,7 +18,31 @@ async function fetchPremiumMembers(){
     }
 }
 
+function getMembershipClass(member){
+    switch(member.membership){
+        case 1:
+            return "member";
+        case 2:
+            return "silver";
+        case 3:
+            return "gold";
+        default:
+            return "member";
+    }
+}
 
+function getMembershipContent(member){
+    switch(member.membership){
+        case 1:
+            return "Member";
+        case 2:
+            return "Silver member";
+        case 3:
+            return "Gold member";
+        default:
+            return "Member";
+    }
+}
 
 const displayPremiumMembers = (members) => {
     homeMembers.innerHTML = '';
@@ -27,32 +51,22 @@ const displayPremiumMembers = (members) => {
     shuffleMembers.length = 3
     shuffleMembers.forEach(member => {
         const memberCard = document.createElement("div");
-        memberCard.classList.add("member-card");
+        memberCard.classList.add("premium-member-card");
 
         memberCard.innerHTML = `
-        <img src="./images/${member.icon}" alt="${member.name} Distribution loading="lazy" width="150" height="150">
+        <div class="member-image">
+        <img src="./images/${member.icon}" alt="${member.name} Distribution loading="lazy">
+        </div>
+
+        <div class="member-info">
         <h3 class="name">${member.name}</h3>
         <p class="address"><strong>Address:</strong> ${member.address}</p>
         <p class="phone"><strong>Phone:</strong> ${member.phone}</p>
         <p class="website"><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
         <p class="info"><strong>Info:</strong> ${member.additionalInfo}</p>
+        <p class="membership member-type ${getMembershipClass(member)}">${getMembershipContent(member)}</p>
+        </div>
         `;
-
-        const membership = document.createElement("p");
-        membership.classList.add("membership");
-        if(member.membership == 1) {
-            membership.textContent = "Member";
-        }
-        if(member.membership == 2) {
-            membership.classList.add("silver");
-            membership.textContent = "Silver member";
-        }
-        if(member.membership == 3) {
-            membership.classList.add("gold");
-            membership.textContent = "Gold member";
-        }
-
-        memberCard.appendChild(membership);
         homeMembers.appendChild(memberCard);
     });
 };  
