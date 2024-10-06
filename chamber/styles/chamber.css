@@ -299,7 +299,19 @@ figure img {
 }
 
 .company-spotlight {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    background-color: var(--memberCard-background-color2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.company-spotlight h2 {
+    margin-bottom: 10px;
+    color: var(--header-footer-color);
+    font-weight: 700;
+    grid-column: 1 / 4;
+    text-align: center;
 }
 
 .company-spotlight > * {
@@ -316,6 +328,7 @@ figure img {
     grid-template-columns: .5fr 1fr;
     overflow: hidden;
     margin-bottom: 20px;
+
 }
 
 .member-info {

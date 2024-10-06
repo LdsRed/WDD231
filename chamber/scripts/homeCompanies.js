@@ -47,12 +47,13 @@ function getMembershipContent(member){
 const displayPremiumMembers = (members) => {
     homeMembers.innerHTML = '';
     const shuffleMembers = members.sort(() => Math.random() - 0.5);
-
+    const title = document.createElement("h2");
+    title.textContent = "Our Premium Members";
+    homeMembers.appendChild(title);
     shuffleMembers.length = 3
     shuffleMembers.forEach(member => {
         const memberCard = document.createElement("div");
         memberCard.classList.add("premium-member-card");
-
         memberCard.innerHTML = `
         <div class="member-image">
         <img src="./images/${member.icon}" alt="${member.name} Distribution loading="lazy">
@@ -69,6 +70,7 @@ const displayPremiumMembers = (members) => {
         `;
         homeMembers.appendChild(memberCard);
     });
+    
 };  
 
 
