@@ -1,5 +1,5 @@
 const homeMembers = document.querySelector("#company-spotlight");
-const memberJSON = './data/members.json';
+const members = './data/members.json';
 
 
 
@@ -7,7 +7,7 @@ const memberJSON = './data/members.json';
 async function fetchPremiumMembers(){
     let premiumMembers = [];
     try{
-    const response = await fetch(memberJSON);
+    const response = await fetch(members);
     if (response.ok) {
         premiumMembers = await response.json();
         premiumMembers = premiumMembers.filter( member => member.membership > 1);

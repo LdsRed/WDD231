@@ -365,7 +365,7 @@ figure img {
 }
 
 .member-type {
-    color: var(--header-footer-color);
+    color: #000000;
     font-weight: 700;
     text-align: center;
     width: 50%;
