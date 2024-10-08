@@ -387,7 +387,8 @@ footer{
 
 
 .social-media {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 .social-media svg{
     width: 50px;
