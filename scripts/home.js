@@ -1,14 +1,7 @@
-document.getElementById('menu-toggle').addEventListener('click', () => {
-   const menu = document.getElementById('main-menu');  
-   if (menu.style.display === 'flex') {
-        menu.style.display = 'none'; 
-   }else{
-    menu.style.display = 'flex';
-   }
-});
+import { displayCourseDetails } from "./dialogBox.js";
 
-document.getElementById("currentyear").innerText = new Date().getFullYear();
-document.getElementById("lastModified").innerText = "Last modified: " + document.lastModified;
+const filters = document.getElementById("filters");
+const courseContainer = document.querySelector("#cert-list");
 
 
 const courses = [
@@ -59,7 +52,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -73,7 +66,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -91,34 +84,26 @@ const courses = [
     }
 ]
 
-
-const courseContainer = document.querySelector("#cert-list");
-
 const reset = () => {
     courseContainer.innerHTML = "";
 };
 
-
-
 const renderCertificates = (courseArr) => {
-  let certButtons = "";
   courseArr.forEach((cert) => {
-    if(cert.completed){
-        certButtons += `
-        <button class="completed">${cert.subject} ${cert.number}</button>`;
-    }else{
-        certButtons+=`
-        <button class="cert-list-button">${cert.subject} ${cert.number}</button>`;
-    }
+    const certButton = document.createElement("button");
+    certButton.textContent = cert.subject + " " + cert.number;
+    certButton.setAttribute("class", cert.completed ? "completed" : "cert-list-button");
+    
+    courseContainer.appendChild(certButton);
+
+
+    certButton.addEventListener("click", () => {
+        displayCourseDetails(cert, courseContainer); 
     });
-    courseContainer.innerHTML = certButtons;
-};
+    
+});
+}
 
-renderCertificates(courses);
-
-
-
-const filters = document.getElementById("filters");
 
 
 filters.addEventListener("click", (event) => {
@@ -135,3 +120,5 @@ filters.addEventListener("click", (event) => {
         renderCertificates(wdd);
     }
 });
+
+renderCertificates(courses);
