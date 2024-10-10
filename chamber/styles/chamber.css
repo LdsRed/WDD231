@@ -373,6 +373,34 @@ figure img {
 
 
 
+main .join-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header-footer-color);
+    color: var(--paragraph-color2);
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.join-the-chamber , .membership-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
 footer{
     background-color: var(--header-footer-color);
     color:var(--paragraph-color2);  
