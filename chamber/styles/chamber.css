@@ -25,7 +25,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--site-font)
+    font-family: var(--site-font);
+    width: auto;
 }
 
 
@@ -385,12 +386,40 @@ main .join-container {
     flex-direction: column;
     background-color: var(--header-footer-color);
     color: var(--paragraph-color2);
-    max-width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 10);
     padding: 20px;
     margin-bottom: 20px;
+    width: 100%;
 
+}
+
+fieldset {
+    border: none;
+}
+
+label p {
+    margin-bottom: 5px;
+}
+
+.join-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.join-form label {
+    padding-top:1rem ;
+    display: block;
+}
+
+.join-form label input {
+    max-width: 20rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .join-the-chamber , .membership-form {

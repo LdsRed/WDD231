@@ -56,31 +56,50 @@
     <main>
         <div class="join-container">   
             <form class="join-form" action="thankyou.html" method="GET">
+                <h2>Join the Chamber</h2>
+                <div>*Required fields</div>
                 <fieldset class="join-the-chamber">
-                    <legend>Join The Chamber</legend>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" required>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>   
+                    <legend>Personal Information</legend>
+                    <label for="fname">
+                        <p>First Name <span class="required">*</span></p>
+                        <input type="text" id="fname" name="fname" required>
+                    </label>
+                    <label for="lname">
+                        <p>Last Name<span class="required">*</span></p>
+                        <input type="text" id="lname" name="lname" required>
+                    </label>
+                    <label for="email">
+                        <p>Email<span class="required">*</span></p>
+                        <input type="email" id="email" name="email" required> 
+                    </label>  
                 </fieldset>
                 
                 <fieldset class="membership-form">
                     <legend>Membership</legend>
-                    <label for="mem-type">Membership Type</label>
+                    <label for="mem-type">
+                        <p>Select Membership Type</p></label><label for="mem-type">Membership Type</label>
                     <select name="membership-type" id="mem-type">
                         <option value="Member">Free</option>
                         <option value="Silver">Standard</option>
                         <option value="Gold">Premium</option>
                     </select>
-                    <label for="mem-start">Start Date</label>
-                    <input type="date" id="mem-start" name="mem-start">
-                    <label for="mem-end">End Date</label>
-                    <input type="date" id="mem-end" name="mem-end">
+                    <label for="mem-start">Start Date
+                        <input type="date" id="mem-start" name="mem-start">
+                    </label>
+                    
+                    <label for="mem-end">End Date
+                        <input type="date" id="mem-end" name="mem-end">
+                    </label>
+                    
                 </fieldset>
             </form>
-        </div>     
+        </div> 
+        
+        <section class="join-members-section flex flex-col">
+            <h2>Members</h2>
+            <div class="members-card-container">
+            </div>
+        </section>
     </main>
 
     <footer>
