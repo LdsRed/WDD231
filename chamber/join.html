@@ -62,22 +62,22 @@
                 <fieldset class="join-the-chamber">
                     <legend class="personal-info">Personal Information</legend>
                     <label for="first">
-                        <p>First Name <span class="required">*</span></p>
+                        First Name <span class="required">*</span>
                         <input type="text" id="first" name="first" required autofocus>
                     </label>
                     <label for="last">
-                        <p>Last Name<span class="required">*</span></p>
+                         Last Name<span class="required">*</span>
                         <input type="text" id="last" name="last" required>
                     </label>
                     <label for="email">
-                        <p>Email<span class="required">*</span></p>
+                        Email<span class="required">*</span>
                         <input type="email" id="email" name="email" required
                          placeholder="example@example.com"
                          autocomplete="email"> 
                     </label>  
 
                     <label for="title">
-                        <p>Title or Position</p>
+                        Title or Position
                         <input type="text" id="title" name="title" required
                         autocomplete="organization-title"
                         pattern="[a-zA-Z -]{7,}"
@@ -85,7 +85,7 @@
                     </label> 
 
                     <label for="phone">
-                        <p>Phone</p>
+                        Phone
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         title="Enter a valid phone number: XX-XXX-XXXX"
                         autocomplete="tel"
@@ -97,12 +97,12 @@
                     <legend class="membership-info">Membership Information</legend>
 
                     <label for="business-name">
-                        <p>Business Name <span class="required">*</span></p>
+                        Business Name <span class="required">*</span>
                         <input type="text" id="business-name" name="busines-name" required>
                     </label>
 
                     <label for="mem-type">
-                        <p>Membership Type</p>   
+                        Membership Type
                         <select name="mem-type" id="mem-type" required>
                             <option value="" disabled selected>Select Membership Type</option>
                             <option value="np">Non-profit</option>
@@ -113,7 +113,7 @@
                     </label>                        
 
                     <label for="business-description">
-                        <p>Description of Business/Organization</p>
+                        Description of Business/Organization
                         <textarea id="business-description" 
                         name="business-description" 
                         class="business-description">
@@ -127,7 +127,9 @@
             </form>
         </div> 
         
-        <section id="membership-levels" class="membership-levels flex flex-col"></section>
+        <section id="membership-levels" class="membership-levels flex flex-col">
+            <h2>Membership Levels</h2>
+        </section>
 
 
     </main>

@@ -424,10 +424,6 @@ main .join-container {
 }
 
 
-label p {
-    margin-bottom: 5px;
-}
-
 .join-form h2 {
     text-align: center;
     margin-bottom: 30px;
@@ -444,6 +440,7 @@ label p {
     width: 100%;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     
 }

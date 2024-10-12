@@ -11,10 +11,6 @@ async function displayMembershipLevels(){
 }
 
 function renderMembershipLevels(membershipLevels){
-    membershipLevelsContainer.innerHTML = "";
-    const memberShipLevelTitle = document.createElement("h2");
-    memberShipLevelTitle.textContent = "Membership Levels";
-    membershipLevelsContainer.appendChild(memberShipLevelTitle);
     
 
     for(let i = 0; i < membershipLevels.length; i++){
