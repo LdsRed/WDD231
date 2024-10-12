@@ -25,14 +25,9 @@
         display: block;
         max-width: 1500px;
         margin: 0 auto;
-        /*
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 50px; */
     }
 
     h1 {
-        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -61,7 +56,6 @@
         margin: 10px auto;
         display: flex;
         flex-direction: column;
-        margin: auto;
     }
     
     
@@ -113,6 +107,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+    }
+
+
+
+    /**************Join Page *************************/
+    .join--main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer {

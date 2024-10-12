@@ -36,7 +36,6 @@ header {
     justify-content: space-between;
     background-color: var(--header-footer-color);  
     color: white;
-    padding: 20px;
     text-align: center;
     margin-bottom: 20px;
     position: relative
@@ -49,7 +48,7 @@ h1, h2, h3 {
 
 .header-container {
     display: flex;
-    padding: 5px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -78,12 +77,14 @@ h1, h2, h3 {
     background-color: var(--header-footer-color);
     color: var(--h2-background-color);
     border: none;
-    display: inline-block;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
+/* #menu-toggle {
+    display: block;
+} */
 
 .topnav {
     overflow: hidden;
@@ -122,7 +123,6 @@ main {
 }
 
 h1 {
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -193,13 +193,12 @@ h1 {
 
 
 .hero-content {
-
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     max-width: 60rem;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
 }
 
 .hero-title{
@@ -263,10 +262,14 @@ h1 {
     letter-spacing: calc(1rem * .025)
 }
 
-figure img {
-    width: 100%;
+figure {
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+figure img {
+    width: 100%;
 }
 
 .weather-section {
@@ -372,6 +375,11 @@ figure img {
     width: 50%;
 }
 
+.required {
+    color: #990000;
+    padding: 5px;
+    margin: 2px;
+}
 
 
 main .join-container {
@@ -381,23 +389,40 @@ main .join-container {
     align-items: center;
 }
 
+
+/****************Join the Chamber page***************/
+
+.header--join-page{
+    margin: 0;
+}
+
+
+
+
 .join-form {
     display: flex;
     flex-direction: column;
-    background-color: var(--header-footer-color);
-    color: var(--paragraph-color2);
+    background-color: var(--body-background-color2);
+    color: var(--header-footer-color);
     max-width: 400px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    box-shadow: 0px 4px 6px rgba(128, 128, 128, 0.5);
+
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
 
 }
 
-fieldset {
-    border: none;
+.join-form div {
+
+    text-align: left;
+    margin: 20px;
+    font-size: .8rem;
+    color: #990000;
 }
+
 
 label p {
     margin-bottom: 5px;
@@ -406,6 +431,7 @@ label p {
 .join-form h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 .join-form label {
@@ -417,9 +443,9 @@ label p {
     max-width: 20rem;
     width: 100%;
     border-radius: 5px;
-    border: none;
     padding: 10px;
     margin-bottom: 10px;
+    
 }
 
 .join-the-chamber , .membership-form {
@@ -429,6 +455,198 @@ label p {
     margin-bottom: 20px;
 }
 
+
+.personal-info, .membership-info {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+label select {
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+label #business-description {
+    max-width: 20rem;
+    width: 100%;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.join-btn{
+    align-self: center;    
+    background-color: var(--h2-background-color);
+    font-size: .9rem;
+    text-align: center;
+    padding: .75em 1em;
+    font-weight: 700;
+    border: none;
+    line-height: 1;
+    letter-spacing: calc(1rem * .025);
+    border-radius: 5px;
+    width: 200px;
+}
+.join--main {
+
+    background-color: var(--header-footer-color);
+}
+
+
+.membership-levels{
+    background-color: var(--body-background-color2);
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    height: 900px;
+}
+
+
+.membership-levels h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+
+.membership-card {
+    border-radius: 5px;
+    background-color: var(--header-footer-color);
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    text-align: center;
+    line-height: 1.5;
+    overflow: hidden;
+    height: 200px;
+    color: var(--paragraph-color2);
+    transform: translateY(50px); /* Pequeño desplazamiento para la animación */
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Añadir un retraso a cada tarjeta */
+  .member-card:nth-child(1) {
+    animation-delay: 0.5s; /* Primer miembro aparece después de 0.5s */
+  }
+  
+  .member-card:nth-child(2) {
+    animation-delay: 1s; /* Segundo miembro aparece después de 1s */
+  }
+  
+  .member-card:nth-child(3) {
+    animation-delay: 1.5s; /* Tercer miembro aparece después de 1.5s */
+  }
+
+.membership-card h3 {   
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn-car-membership{
+    width: 200px;
+    border-radius: 5px;
+    color: var(--header-footer-color);
+    min-height: 46px;
+    cursor: pointer;
+    background-color: var(--h2-background-color);
+    border: none;
+    font-weight: 700;
+}
+
+
+
+.modal-header {
+    display: flex;
+    background-color: var(--header-footer-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    align-items: center;   
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+
+
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 10);
+    border-radius: 5px;
+    background-color: var(--memberCard-background-color2);
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+dialog button {
+    font-size: 2rem;
+    background-color: var(--h2-background-color);
+    color: var(--header-footer-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+}
+
+.benefits {
+    line-height: 1.9;
+}
+
+.benefits ul li {
+    list-style-type: disc;
+}
+/**********************Thank you page*************************/
+.submission-details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.data-coming-from-form {
+    border-radius: 5px;
+    background-color: var(--memberCard-background-color2);
+    margin-bottom: 50px;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    text-align: center;
+}
+
+.data-coming-from-form > *{
+    margin-bottom: 20px;
+}
+
+
+.submission-details {
+    text-align: left;
+}
+
+.submission-details p {
+    margin-bottom: 5px;
+}
+
+/**************** Footer **************************/
 
 footer{
     background-color: var(--header-footer-color);
@@ -453,5 +671,9 @@ footer{
 }
 
 
+/******* Utils ********/
 
+.no-margin {
+    margin: 0;
+}
 

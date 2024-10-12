@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="styles/large.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="scripts/chamber.js" defer></script>
-    <script async src="scripts/weather.js" defer></script>
-    <script async src="scripts/homeCompanies.js" defer></script>
-    <script async src="scripts/members.js" defer></script>
+    <script async src="scripts/date.js" defer></script>
+    <script async src="scripts/time.js" defer"></script>
+    <script async src="scripts/membershipLevels.js" type="module" defer></script>
+    <script async src="scripts/membershipDetails.js" defer type="module"></script>
     <link rel="icon" href="images/icons8-arch-linux-color-96.png">
     <title>GNU/Linux Chamber of Commerce</title>
 </head>
 <body>
-    <header>
+    <header class="header--join-page">
 
         <div class="header-container">
             <div class="header-logo">
@@ -37,7 +38,7 @@
             </div>
 
             <div class="header-title">
-                <h1>GNU/Linux</h1>
+                <h1 class="no-margin">GNU/Linux</h1>
                 <p class="subtitle">Chamber of Commerce</p>
             </div>
         </div>
@@ -45,61 +46,90 @@
         <button id="menu-toggle" class="menu-icon">&#9776;</button>
         <nav class="topnav" id="myTopnav">
             <ul id="main-menu" class="main-menu">
-                <li><a class="active" href="/chamber/index.html">Home</a></li>
+                <li><a href="/chamber/index.html">Home</a></li>
                 <li><a href="/chamber/directory.html">Directory</a></li>
-                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a class="active" href="/chamber/join.html">Join</a></li>
                 <li><a href="/chamber/discovery.html">Discover</a></li>
-                <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="join--main">
         <div class="join-container">   
             <form class="join-form" action="thankyou.html" method="GET">
                 <h2>Join the Chamber</h2>
-                <div>*Required fields</div>
+                <div class="">*Required fields</div>
                 <fieldset class="join-the-chamber">
-                    <legend>Personal Information</legend>
-                    <label for="fname">
+                    <legend class="personal-info">Personal Information</legend>
+                    <label for="first">
                         <p>First Name <span class="required">*</span></p>
-                        <input type="text" id="fname" name="fname" required>
+                        <input type="text" id="first" name="first" required autofocus>
                     </label>
-                    <label for="lname">
+                    <label for="last">
                         <p>Last Name<span class="required">*</span></p>
-                        <input type="text" id="lname" name="lname" required>
+                        <input type="text" id="last" name="last" required>
                     </label>
                     <label for="email">
                         <p>Email<span class="required">*</span></p>
-                        <input type="email" id="email" name="email" required> 
+                        <input type="email" id="email" name="email" required
+                         placeholder="example@example.com"
+                         autocomplete="email"> 
                     </label>  
+
+                    <label for="title">
+                        <p>Title or Position</p>
+                        <input type="text" id="title" name="title" required
+                        autocomplete="organization-title"
+                        pattern="[a-zA-Z -]{7,}"
+                        placeholder="Title or Position"> 
+                    </label> 
+
+                    <label for="phone">
+                        <p>Phone</p>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Enter a valid phone number: XX-XXX-XXXX"
+                        autocomplete="tel"
+                        placeholder="XXX-XXX-XXXX"> 
+                    </label> 
                 </fieldset>
                 
                 <fieldset class="membership-form">
-                    <legend>Membership</legend>
-                    <label for="mem-type">
-                        <p>Select Membership Type</p></label><label for="mem-type">Membership Type</label>
-                    <select name="membership-type" id="mem-type">
-                        <option value="Member">Free</option>
-                        <option value="Silver">Standard</option>
-                        <option value="Gold">Premium</option>
-                    </select>
-                    <label for="mem-start">Start Date
-                        <input type="date" id="mem-start" name="mem-start">
+                    <legend class="membership-info">Membership Information</legend>
+
+                    <label for="business-name">
+                        <p>Business Name <span class="required">*</span></p>
+                        <input type="text" id="business-name" name="busines-name" required>
                     </label>
-                    
-                    <label for="mem-end">End Date
-                        <input type="date" id="mem-end" name="mem-end">
+
+                    <label for="mem-type">
+                        <p>Membership Type</p>   
+                        <select name="mem-type" id="mem-type" required>
+                            <option value="" disabled selected>Select Membership Type</option>
+                            <option value="np">Non-profit</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="god">Gold Membership</option>
+                        </select>
+                    </label>                        
+
+                    <label for="business-description">
+                        <p>Description of Business/Organization</p>
+                        <textarea id="business-description" 
+                        name="business-description" 
+                        class="business-description">
+                        </textarea>
+                        <input type="hidden" id="timestamp" name="timestamp">
                     </label>
                     
                 </fieldset>
+
+                <button type="submit" class="join-btn">Join the Chamber</button>
             </form>
         </div> 
         
-        <section class="join-members-section flex flex-col">
-            <h2>Members</h2>
-            <div class="members-card-container">
-            </div>
-        </section>
+        <section id="membership-levels" class="membership-levels flex flex-col"></section>
+
+
     </main>
 
     <footer>

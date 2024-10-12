@@ -1,0 +1,46 @@
+[
+  {
+    "title": "NP Membership",
+    "description": "Membership for non-profit organizations with no fee.",
+    "modalId": "npModal",
+    "benefits": [
+      "Access to all non-profit events",
+      "Basic training and support",
+      "Networking opportunities with other non-profit organizations"
+    ],
+    "cost": "Free"
+  },
+  {
+    "title": "Bronze Membership",
+    "modalId": "bronzeModal",
+    "benefits": [
+      "Access to special events",
+      "Basic training materials",
+      "Home page spotlight position for 1 week"
+    ],
+    "cost": "$10/month"
+  },
+  {
+    "title": "Silver Membership",
+    "modalId": "silverModal",
+    "benefits": [
+      "Access to special events",
+      "Intermediate training materials",
+      "Home page spotlight position for 2 weeks",
+      "5% event discount"
+    ],
+    "cost": "$25/month"
+  },
+  {
+    "title": "Gold Membership",
+    "modalId": "goldModal",
+    "benefits": [
+      "Priority access to special events",
+      "Advanced training materials",
+      "Home page spotlight position for 1 month",
+      "10% event discount",
+      "Advertising space on newsletter"
+    ],
+    "cost": "$50/month"
+  }
+]
