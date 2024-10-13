@@ -119,7 +119,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px;  
 }
 
 h1 {
@@ -402,16 +402,16 @@ main .join-container {
 .join-form {
     display: flex;
     flex-direction: column;
-    background-color: var(--body-background-color2);
+    background-color: var(--h2-background-color);
     color: var(--header-footer-color);
     max-width: 400px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(128, 128, 128, 0.5);
-
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    border: 1px solid var(--header-footer-color);
 
 }
 
@@ -419,20 +419,25 @@ main .join-container {
 
     text-align: left;
     margin: 20px;
-    font-size: .8rem;
+    font-size: .9rem;
     color: #990000;
 }
 
 
 .join-form h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2rem;
 }
 
 .join-form label {
     padding-top:1rem ;
     display: block;
+    font-weight: 700;
+}
+
+legend {
+    font-weight: 700;
 }
 
 .join-form label input {
@@ -481,7 +486,7 @@ label #business-description {
 
 .join-btn{
     align-self: center;    
-    background-color: var(--h2-background-color);
+    background-color: var(--header-footer-color);
     font-size: .9rem;
     text-align: center;
     padding: .75em 1em;
@@ -491,19 +496,21 @@ label #business-description {
     letter-spacing: calc(1rem * .025);
     border-radius: 5px;
     width: 200px;
+    color: var(--memberCard-background-color2);
 }
 .join--main {
 
-    background-color: var(--header-footer-color);
+    background-color: var(--body-background-color2);
 }
 
 
 .membership-levels{
-    background-color: var(--body-background-color2);
+    background-color: var(--h2-background-color);
     margin: 20px;
     border-radius: 5px;
     padding: 20px;
     height: 900px;
+    border: 1px solid var(--header-footer-color);
 }
 
 
@@ -511,12 +518,13 @@ label #business-description {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
+    color: var(--header-footer-color);
 }
 
 
 .membership-card {
     border-radius: 5px;
-    background-color: var(--header-footer-color);
+    background-color: var(--body-background-color2);
     margin-bottom: 50px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 10);
@@ -524,7 +532,7 @@ label #business-description {
     line-height: 1.5;
     overflow: hidden;
     height: 200px;
-    color: var(--paragraph-color2);
+    color: var(--header-footer-color);
     transform: translateY(50px); /* Pequeño desplazamiento para la animación */
     animation: fadeIn 1s ease forwards;
 }
@@ -557,10 +565,10 @@ label #business-description {
 .learn-more-btn-car-membership{
     width: 200px;
     border-radius: 5px;
-    color: var(--header-footer-color);
+    color: var(--memberCard-background-color2);
     min-height: 46px;
     cursor: pointer;
-    background-color: var(--h2-background-color);
+    background-color: var(--header-footer-color);
     border: none;
     font-weight: 700;
 }
