@@ -53,41 +53,26 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero-container flex flex-col"> 
-            <div class="hero-content flex flex-col">
-                <h2 class="hero-title">GNU/Linux Chamber of Commerce</h2>
-                <div class="hero-description">
-                    The GNU/Linux Chamber of Commerce is a directory of GNU/Linux users and organizations. 
-                    It is a community driven project and is open to anyone who uses GNU/Linux.
-                </div>
-                <form  class="form-subscription">
-                    <input type="email" name="email" id="email" placeholder="your email address" autocomplete="email" required>
-                    <button class="btn uppercase" type="submit">Subscribe</button>
-                </form>
-            </div>
-            <figure>
-                <img src="images/homepage-featured-image.webp" alt="">
-            </figure>
+    <main class="discovery-main-container">
+
+        <h2>Discovery</h2>
+
+        <div class="discovery-container">
+            <aside class="discovery-aside" id="discovery-aside">
+                <div class="discovery-aside-calendar"></div>
+
+                <div class="discovery-aside-events"></div>
+
+                <div class="discovery-aside-companies"></div>
+                
+                <div class="discovery-aside-quizzes-puzzles"></div>
+
+            </aside>
+
+
+            <section class="discovery-section" id="discovery-section"></section>
         </div>
-
-        <section class="weather-section flex flex-col">
-            <div class="home-events">
-                <h3>Upcoming Events</h3>
-            </div>
-            <div id="current-weather" class="weather-cards current-weather">
-                <h3>Current Weather</h3>
-                <div id="weather-icon"></div>
-                <div id="current-temp"></div>
-            </div>
-            <div id="weather-forecast" class="weather-cards">
-                <h3>Weather Forecast</h3>
-                <div id="weather-forecast-days" class="weather-forecast-days"></div>
-            </div>
-        </section>
-
-        <section id="company-spotlight" class="company-spotlight flex flex-col">
-        </section>
+       
     </main>
 
     <footer>

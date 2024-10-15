@@ -121,4 +121,20 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+
+
+
+
+    /**************** Discovery Page ********************/
+
+
+
+    .discovery-container {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        gap: 20px;
+        border: 1px solid var(--header-footer-color);
+    }
+
 }

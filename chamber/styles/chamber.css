@@ -26,7 +26,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--site-font);
-    width: auto;
 }
 
 
@@ -689,3 +688,39 @@ footer{
     margin: 0;
 }
 
+
+    /**************** Discovery Page ********************/
+    
+    .discovery-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid var(--header-footer-color);
+    }
+
+    
+    .discovery-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--header-footer-color);
+        height: 500px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
+    .discovery-section {
+        border: 1px solid var(--header-footer-color);
+        margin: 20px;
+        height: 500px;
+    }
+
+    .discovery-aside > div {
+
+        border: 1px solid var(--header-footer-color);
+        width: 100%;
+        height: 100%;
+        margin:20px;
+    }
