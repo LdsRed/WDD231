@@ -63,11 +63,11 @@
                     <legend class="personal-info">Personal Information</legend>
                     <label for="first">
                         First Name <span class="required">*</span>
-                        <input type="text" id="first" name="first" required autofocus>
+                        <input type="text" id="first" name="first" required autofocus autocomplete="given-name">
                     </label>
                     <label for="last">
                          Last Name<span class="required">*</span>
-                        <input type="text" id="last" name="last" required>
+                        <input type="text" id="last" name="last" required autocomplete="family-name">
                     </label>
                     <label for="email">
                         Email<span class="required">*</span>
@@ -80,16 +80,14 @@
                         Title or Position
                         <input type="text" id="title" name="title" required
                         autocomplete="organization-title"
-                        pattern="[a-zA-Z -]{7,}"
-                        placeholder="Title or Position"> 
+                        pattern="[a-zA-Z\-\s]{7,}"> 
                     </label> 
 
                     <label for="phone">
                         Phone
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         title="Enter a valid phone number: XX-XXX-XXXX"
-                        autocomplete="tel"
-                        placeholder="XXX-XXX-XXXX"> 
+                        autocomplete="tel"> 
                     </label> 
                 </fieldset>
                 
@@ -98,7 +96,7 @@
 
                     <label for="business-name">
                         Business Name <span class="required">*</span>
-                        <input type="text" id="business-name" name="busines-name" required>
+                        <input type="text" id="business-name" name="busines-name" required autocomplete="organization">
                     </label>
 
                     <label for="mem-type">
@@ -118,8 +116,8 @@
                         name="business-description" 
                         class="business-description">
                         </textarea>
-                        <input type="hidden" id="timestamp" name="timestamp">
                     </label>
+                    <input type="hidden" id="timestamp" name="timestamp">
                     
                 </fieldset>
 

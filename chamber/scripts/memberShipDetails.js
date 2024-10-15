@@ -38,8 +38,4 @@ function displayMemberShipDetails(level, tagElement){
     
 }
 
-
-
-
-
 export {displayMemberShipDetails};
