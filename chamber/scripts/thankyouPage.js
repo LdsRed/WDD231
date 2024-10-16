@@ -23,5 +23,5 @@ thankyouData.innerHTML = `
 <p><strong>Your Title:</strong> ${displayFormData("title").replace("+", " ")}</p>
 <p><strong>Your Business Name:</strong> ${displayFormData("business-name")}</p>
 <p><strong>Your Membership Type:</strong> ${displayFormData("mem-type")}</p>
-<p><strong>Date and Time completed:</strong> ${displayFormData("timestamp").replace("%", "+", "-", "")}</p>
+<p><strong>Date and Time completed:</strong> ${displayFormData("timestamp")}</p>
 </div>`;

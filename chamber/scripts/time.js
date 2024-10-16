@@ -1,18 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const timestamp = document.querySelector("#timestamp");
-    const currentTime = new Date();
+    const TODAY_DATE = new Date();
+    const formatDate = new Intl.DateTimeFormat("en-US", {
+        weekday: 'long',
+        month: 'long',
+        year:'2-digit',
+        day:'2-digit'
+    })
 
-    const year = currentTime.getFullYear();
-    const month = currentTime.getMonth() + 1;
-    const day = currentTime.getDate();
-    let hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
-    const amPm = hours >= 12 ? "PM" : "AM";
-    hours = hours % 12;
-    hours = hours || 12;
-    const newMinutes = minutes < 10 ? '0' + minutes : minutes;
-
-    
-    timestamp.value = `${month}/${day}/${year} - ${hours}:${newMinutes} ${amPm}`;
-
+    timestamp.value = formatDate.format(TODAY_DATE);
 });
