@@ -632,6 +632,7 @@ dialog button {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 .data-coming-from-form {
