@@ -2,7 +2,8 @@ import {displayMemberShipDetails} from "./memberShipDetails.js";
 
 const membershipLevelsJSON = "./data/membership-levels.json";
 const membershipLevelsContainer = document.querySelector("#membership-levels");
-
+const joinForm = document.querySelector("#join-form");
+const timestamp = document.querySelector("#timestamp");
 
 async function displayMembershipLevels(){
     const response = await fetch(membershipLevelsJSON); 
@@ -34,6 +35,10 @@ function renderMembershipLevels(membershipLevels){
         });
     }        
 }
+
+joinForm.addEventListener('submit', () => {
+    timestamp.value = Date.now();
+})
 
 
 displayMembershipLevels();

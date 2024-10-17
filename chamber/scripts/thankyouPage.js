@@ -1,12 +1,17 @@
 const currentUrl = window.location.href;
 const formData = currentUrl.split("?")[1].split("&");	
 const thankyouData = document.querySelector("#data-coming-from-form");
+let result = null;
 
 function displayFormData(field){
-    let result = "";
+
     formData.forEach(element => {
-        if(element.startsWith(field)){
-            result = element.split("=")[1].replace("%40","@");  
+        if(element.startsWith(field) ){
+            result = decodeURIComponent(element.split('=')[1]);
+
+            if (field === 'business-name') {
+                result = result.replace(/\+/g, ' ');
+            }
         }
     });
     return(result);
@@ -23,5 +28,11 @@ thankyouData.innerHTML = `
 <p><strong>Your Title:</strong> ${displayFormData("title").replace("+", " ")}</p>
 <p><strong>Your Business Name:</strong> ${displayFormData("business-name")}</p>
 <p><strong>Your Membership Type:</strong> ${displayFormData("mem-type")}</p>
-<p><strong>Date and Time completed:</strong> ${displayFormData("timestamp")}</p>
+<p><strong>Date and Time completed:</strong> ${new Date(Number(displayFormData("timestamp"))).toLocaleString('en-US', {
+    year: "numeric",
+    month:"long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+})}</p>
 </div>`;
