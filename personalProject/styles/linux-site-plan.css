@@ -15,7 +15,7 @@
   --body-background-color: #f6f3db;
   --paragraph-color-on-white: #383838; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #eeead5; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #5FA8D3  ;
+  --paragraph-background-color: #383838  ;
   --nav-link-color: #eeead5;
   --nav-background-color: #383838;
   --nav-hover-link-color: #eeead5;
@@ -61,7 +61,7 @@ header > h1, header > h2 {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 25px;
+  padding: 10px;
 }
 .colors {
   width: 100%;
