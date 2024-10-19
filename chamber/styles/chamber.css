@@ -690,38 +690,65 @@ footer{
 }
 
 
-    /**************** Discovery Page ********************/
-    
-    .discovery-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border: 1px solid var(--header-footer-color);
-    }
+/**************** Discovery Page ********************/
 
-    
-    .discovery-aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--header-footer-color);
-        height: 500px;
-        margin: 20px;
-        padding: 20px;
-    }
+.discovery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--header-footer-color);
+}
 
 
-    .discovery-section {
-        border: 1px solid var(--header-footer-color);
-        margin: 20px;
-        height: 500px;
-    }
+.discovery-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--header-footer-color);
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+}
 
-    .discovery-aside > div {
 
-        border: 1px solid var(--header-footer-color);
-        width: 100%;
-        height: 100%;
-        margin:20px;
-    }
+.discovery-section {
+    border: 1px solid var(--header-footer-color);
+    margin: 20px;
+}
+
+.discovery-section > section {
+    border: 1px solid var(--header-footer-color);
+}
+
+
+.discovery-aside > div {
+
+    border: 1px solid var(--header-footer-color);
+    width: 100%;
+    height: 100%;
+    margin:20px;
+}
+
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.resources-container, .community-section, .events-section, .news-section,
+.learn-linux-section, .resource-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container >* {
+    border-radius: 5px;
+    border: 1px solid var(--header-footer-color);
+}

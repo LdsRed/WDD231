@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="styles/large.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="scripts/chamber.js" defer></script>
-    <script async src="scripts/weather.js" defer></script>
-    <script async src="scripts/homeCompanies.js" defer></script>
-    <script async src="scripts/members.js" defer></script>
+    <script async src="scripts/date.js" defer></script>
+    <script async src="scripts/information.js" defer></script>
     <link rel="icon" href="images/icons8-arch-linux-color-96.png">
     <title>GNU/Linux Chamber of Commerce</title>
 </head>
@@ -55,7 +54,9 @@
     </header>
     <main class="discovery-main-container">
 
-        <h2>Discovery</h2>
+        <h2>Information</h2>
+
+        <span id="visit-message"></span>
 
         <div class="discovery-container">
             <aside class="discovery-aside" id="discovery-aside">
@@ -70,7 +71,66 @@
             </aside>
 
 
-            <section class="discovery-section" id="discovery-section"></section>
+            <section class="discovery-section" id="discovery-section">
+
+
+                <section class="resource-section" id="resource-section">
+                    <div class="section-container">
+                        <h4>Resources</h4>
+                        <figure>
+                            <img src="images/guides.webp" alt="" loading="lazy">
+                            <figcaption class="discovery-figure"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="community-section" id="community-section">
+
+                    <div class="section-container" >
+                        <h4>Community</h4>
+                        <figure>
+                            <img src="" alt="" loading="lazy">
+                            <figcaption class="discovery-figure"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="events-section" id="events-section">
+
+                    <div class="section-container">
+                        <h4>Events</h4>
+                        <figure>
+                            <img src="images/events.webp" alt="" loading="lazy">
+                            <figcaption class="discovery-figure"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="news-section" id="news-section">
+
+                    <div class="section-container">
+                        <h4>News</h4>
+                        <figure>
+                            <img src="images/news.webp" alt="" loading="lazy">
+
+                            <figcaption class="discovery-figure"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="learn-linux-section" id="learn-linux-section">
+
+                    <div class="section-container">
+                        <h4>Linux Tutorials</h4>
+                        <figure>
+                            <img src="images/courses.webp" alt="Courses 🎓" loading="lazy">
+                            <figcaption class="discovery-figure"></figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+
+            </section>
         </div>
        
     </main>
