@@ -269,6 +269,7 @@ figure {
 
 figure img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .weather-section {
@@ -691,64 +692,70 @@ footer{
 
 
 /**************** Discovery Page ********************/
-
+#visit-message {
+    font-size: 1.4rem;
+}
 .discovery-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid var(--header-footer-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+.discovery-container img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px var(--accent2-color);
 }
 
+
+.discovery-container h2 {
+    font-size: 2rem;
+}
+
+.discovery-aside section {
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: var(--accent1-color-light);
+}
 
 .discovery-aside {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--header-footer-color);
-    height: 500px;
-    margin: 20px;
     padding: 20px;
+    background-color: var(--memberCard-background-color2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    border-radius: 5px;
 }
 
 
-.discovery-section {
-    border: 1px solid var(--header-footer-color);
-    margin: 20px;
+.gallery-section {
+    display: grid;
+    row-gap: 40px;
 }
 
-.discovery-section > section {
-    border: 1px solid var(--header-footer-color);
-}
 
 
 .discovery-aside > div {
-
     border: 1px solid var(--header-footer-color);
     width: 100%;
     height: 100%;
     margin:20px;
 }
 
-
-.section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.picture-container {
+    display: grid;
+    justify-items: center;
     align-items: center;
-    max-width: 500px;
-    margin: 10px;
-}
-
-.resources-container, .community-section, .events-section, .news-section,
-.learn-linux-section, .resource-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-container >* {
+    background-color: var(--memberCard-background-color2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
     border-radius: 5px;
-    border: 1px solid var(--header-footer-color);
+    
+}
+
+.picture-container > * {
+    margin: 10px;
+    padding: 10px;
 }

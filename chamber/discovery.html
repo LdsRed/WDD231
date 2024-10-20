@@ -54,83 +54,88 @@
     </header>
     <main class="discovery-main-container">
 
-        <h2>Information</h2>
-
-        <span id="visit-message"></span>
-
         <div class="discovery-container">
             <aside class="discovery-aside" id="discovery-aside">
-                <div class="discovery-aside-calendar"></div>
+                <h2>Information</h2>
 
-                <div class="discovery-aside-events"></div>
-
-                <div class="discovery-aside-companies"></div>
-                
-                <div class="discovery-aside-quizzes-puzzles"></div>
-
+                <span id="visit-message"></span>
+                <section>
+                    <h3>Events</h3>
+                    <p>Upcoming events</p>
+                </section>
+                <section>
+                    <h3>Events</h3>
+                    <p>Upcoming events</p>
+                </section>
+                <section>
+                    <h3>Events</h3>
+                    <p>Upcoming events</p>
+                </section>
+                <section>
+                    <h3>Events</h3>
+                    <p>Upcoming events</p>
+                </section>
             </aside>
 
 
-            <section class="discovery-section" id="discovery-section">
 
-
-                <section class="resource-section" id="resource-section">
-                    <div class="section-container">
-                        <h4>Resources</h4>
-                        <figure>
-                            <img src="images/guides.webp" alt="" loading="lazy">
-                            <figcaption class="discovery-figure"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="community-section" id="community-section">
-
-                    <div class="section-container" >
-                        <h4>Community</h4>
-                        <figure>
-                            <img src="" alt="" loading="lazy">
-                            <figcaption class="discovery-figure"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="events-section" id="events-section">
-
-                    <div class="section-container">
-                        <h4>Events</h4>
-                        <figure>
-                            <img src="images/events.webp" alt="" loading="lazy">
-                            <figcaption class="discovery-figure"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="news-section" id="news-section">
-
-                    <div class="section-container">
-                        <h4>News</h4>
-                        <figure>
-                            <img src="images/news.webp" alt="" loading="lazy">
-
-                            <figcaption class="discovery-figure"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="learn-linux-section" id="learn-linux-section">
-
-                    <div class="section-container">
-                        <h4>Linux Tutorials</h4>
-                        <figure>
-                            <img src="images/courses.webp" alt="Courses 🎓" loading="lazy">
-                            <figcaption class="discovery-figure"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-
-            </section>
+            <div class="gallery-section">
+                <h2>Gallery</h2>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/community.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/community.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/community.webp"           
+                        alt="A fountain in the middle of a stone plaza." loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Chamber of Rule in Ul'dah is the opulent seat of the Sultana, where power and wealth intertwine. Adorned with lavish decor, it serves as a stage for political intrigue, with influential figures vying for favor amidst whispers of ambition and betrayal. Here, the Sultana balances governance and the needs of her citizens while navigating the ever-present schemes that threaten the city's stability.</p>
+                </div>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/courses.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/courses.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/courses.webp"             
+                        alt="A crystal suspended in the air with metal rings in the middle of a stone plaza." loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Aetheryte Crystal in Ul'dah serves as a vital hub for adventurers and citizens alike, facilitating instantaneous travel throughout Eorzea. This towering crystal, glowing with ethereal light, is not only a symbol of the city's prosperity but also a testament to the technological marvels of the Allagan Empire. Adventurers gather here to connect with distant locations, while the surrounding area bustles with merchants and travelers, all drawn to the crystal’s enchanting aura and the promise of new journeys.</p>
+                </div>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/events.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/events.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/events.webp"             
+                        alt="A stone road with tent stalls for stores. Banners are strewn over the walkway." loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Sapphire Avenue Exchange is the bustling heart of commerce in Ul'dah, renowned for its vibrant markets and wealth of trade opportunities. This grand structure, adorned with gleaming gemstones, attracts merchants and adventurers alike, eager to buy and sell goods from across Eorzea. Here, the clamor of haggling fills the air as fortune seekers navigate the lively stalls, making it a lively focal point of Ul'dah's economic prosperity.</p>
+                </div>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/guides.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/guides.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/guides.webp"             
+                        alt="A tavern with tables and laterns. A group of four people sit at a table" loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Quicksand is a renowned tavern in Ul'dah, serving as a popular gathering place for adventurers and locals alike. With its warm, welcoming atmosphere, the tavern is a hub for sharing stories, forming alliances, and seeking work. Patrons enjoy hearty meals and refreshing drinks while exchanging rumors of quests and treasures, making it an essential stop for those looking to immerse themselves in the city's vibrant culture and camaraderie.</p>
+                </div>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/news.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/news.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/news.webp"             
+                        alt="A waterfall into a pool. The pool has fountains and a gazebo in the middle. Houses surround the pool." loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Goblet is a vibrant residential district in Ul'dah, serving as a key housing area for adventurers and citizens alike. Known for its beautifully designed homes and lush surroundings, this locale fosters a sense of community among its residents. The Goblet offers various amenities, including shops and social spaces, making it a popular choice for those looking to settle down amidst the bustling life of the city while enjoying the comforts of home.</p>
+                </div>
+                <div class="picture-container">
+                    <picture>
+                        <source srcset="images/distros.webp" media="(min-width: 60rem)" width="630" height="354">
+                        <source srcset="images/distros.webp" media="(min-width: 30rem)" width="400" height="225">
+                        <img src="images/distros.webp"             
+                        alt="A desk with a cactus character in the middle. Stained glass and lights adorn the outside walls." loading="lazy" width="285" height="160">
+                    </picture>
+                    <p>The Gold Saucer is a renowned amusement park and entertainment hub in Eorzea, famous for its dazzling attractions and thrilling games. Nestled in the Twilight Forest, this sprawling complex features a variety of activities, from chocobo racing to innovative mini-games, drawing adventurers from all over to test their luck and skills. With its vibrant atmosphere, lively music, and enticing prizes, the Gold Saucer is the ultimate destination for fun and leisure, offering endless excitement and opportunities to unwind amidst the adventures of the realm.</p>
+                </div>
+            </div>
         </div>
        
     </main>
