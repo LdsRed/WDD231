@@ -54,7 +54,7 @@ header {
 /*==================================== Menu content style ================================*/
 .content-menu {
     background-color: var(--content-menu-color);
-    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    box-shadow: 2px 0 5px 2px rgb(66,66,66);
     width: 300px;
     height: 100vh;
     position: absolute;
@@ -74,7 +74,7 @@ header {
 }
 
 .content-menu ul {
-    padding: 100px 0px 20px 0px;
+    padding: 100px 0 20px 0;
     list-style: none;
 
 }
@@ -334,6 +334,13 @@ footer{
 .grid {
     display: grid;
 }
+
+.grid-colum {
+    display: grid;
+    grid-auto-rows: auto 1fr;
+}
+
+
 .grid-item {
     display: grid;
 }
