@@ -1,0 +1,342 @@
+:root {
+    --black-color:#383838;
+    --site-font: 'Montserrat', sans-serif;
+    --site-font2:'Fira Sans Book', sans-serif;
+    --content-menu-color:#383838;
+    --paragrah-on-color:#fff;
+    --paragrah-on-color2:#eeead5;
+    --paragrah-on-hover-color:#a4b925;
+    --paragrah-on-color-hover:#383838;
+    --body-color:#f6f3db;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--site-font2), serif;
+}
+
+/*================================================ Header =======================================*/
+header {
+    background-color: var(--black-color);
+}
+
+
+.box-header {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+/* Icon Menu */
+.icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+    width: 50px;
+}
+
+
+.icon-menu img {
+    vertical-align: top;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*==================================== Menu content style ================================*/
+.content-menu {
+    background-color: var(--content-menu-color);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/*================================ Styles added with JS ==================================*/
+.active {
+    transform: translateX(-500px);
+}
+
+.opacity {
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
+
+.content-menu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+
+}
+
+
+.content-menu ul li {
+    display:block;
+    color: var(--paragrah-on-color2);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.content-menu ul li:hover {
+    background-color: var(--paragrah-on-hover-color);
+    color: var( --paragrah-on-color-hover);
+    text-decoration: none;
+}
+
+
+
+/*================================== Logo Container  ===========================*/
+
+.brand-logo-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    background-color: var(--paragrah-on-color2);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.header-title {
+
+}
+
+.header-title h1 {
+    font-size: 25px;
+    color: var(--paragrah-on-color2);
+}
+
+.header-title p {
+    font-size: 20px;
+    color: var(--paragrah-on-color2);
+}
+
+
+
+/*================================== Navbar  =================================*/
+.navbar-container {
+}
+
+
+
+.navbar-container ul li {
+    color: var(--paragrah-on-color2);
+    font-size: 20px;
+    list-style-type: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.navbar-container ul li:hover {
+    color: var(--paragrah-on-hover-color);
+}
+
+
+.subscribe-button-container {
+    display: none;
+}
+
+.subscribe-button {
+    background-color: var(--paragrah-on-hover-color);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.subscribe-button:hover {
+    box-shadow: 0 0 10px rgba(10, 10, 10, 10);
+}
+
+
+/*=================================Hero Section===========================*/
+
+.homepage-hero {
+    border: 1px solid var(--black-color);
+}
+
+.hero-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hero-content > * {
+    margin: 20px;
+}
+
+.hero-img-container {
+    max-width: 350px;
+    display: flex;
+}
+
+.hero-img-container img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+
+
+
+/*===================================== NEWS CONTAINER ===================================*/
+
+.news-container {
+    margin-top: 40px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+.news-container-items {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.news-container-articles {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.section-news {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+
+.section-news .img-section-news{
+    justify-self: center;
+}
+
+
+/*===================================== LATEST NEWS CONTAINER ===================================*/
+
+.latest-post-container {
+    margin-top: 20px;
+}
+
+.latest-post-table {
+    display: grid;
+    grid-gap: 40px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.latest-news {
+
+}
+
+.article-container {
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.article-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+
+
+.article-img{
+
+}
+
+.article-text{
+
+}
+/*===================================== FOOTER ===========================================*/
+
+footer{
+    background-color: var(--black-color);
+    color:var(--paragrah-on-color2);
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.course-info, .contact-info {
+    line-height: 1.6;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+.social-media svg{
+    width: 50px;
+    margin: 10px;
+}
+
+
+
+/*============================================= Utils ============================================*/
+
+.no-margin {
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--paragrah-on-hover-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: calc(1rem * .025);
+    max-width: 100px;
+    align-self: center;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+}
+.grid-item {
+    display: grid;
+}
+.grid-item img {
+    width: 100%;
+}

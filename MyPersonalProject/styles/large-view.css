@@ -1,0 +1,80 @@
+
+@media (max-width: 768px) {
+    .box-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .navbar-container {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /*Header*/
+    .box-header {;
+        display: grid;
+        grid-template-columns: 50px 1fr 100px ;
+    }
+
+    /*Navbar*/
+
+    .brand-logo-navbar-container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content:flex-start;
+    }
+
+    .navbar-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .subscribe-button-container {
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul li {
+    }
+
+
+    /* Hero content*/
+    .homepage-hero {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        place-items: center;
+    }
+
+
+    /*===================== Recent News ===============================*/
+
+    .news-container-items {
+       grid-template-columns: 1fr 1fr ;
+
+    }
+
+
+
+
+
+    .latest-post-table {
+        grid-template-columns: 1fr .5fr;
+    }
+
+    /*  Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+}
