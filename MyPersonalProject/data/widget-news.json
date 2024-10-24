@@ -1,0 +1,32 @@
+[
+  {
+    "subtitle": "News",
+    "alt": "Automatic vs WP Engine",
+    "title": " Automatic vs WP Engine: WordPress is the new protagonist of the debate about 'Free Riding' in open source",
+    "url": "wordpress.jpg"
+  },
+  {
+    "subtitle": "News",
+    "alt": "Open source maintainers",
+    "title": "60% of open source maintainers are not paid, despite growing security concerns",
+    "url": "mantenimiento-FLOSS.jpg"
+  },
+  {
+    "subtitle": "News",
+    "alt": "Gerald Pfeiter",
+    "title":"Gerald Pfeifer, CTO of SUSE: «We invented enterprise Linux»",
+    "url": "GPS.jpg"
+  },
+  {
+    "subtitle": "News",
+    "alt": "Java 23",
+    "title":"Java 23 introduces Markdown in Javadoc and streamlines the use of the language",
+    "url":"java.png"
+  },
+  {
+    "subtitle": "News",
+    "alt": "Nextcloud",
+    "title":"Nextcloud Hub 9 powers collaboration capabilities and improves performance",
+    "url": "nextcloud.png"
+  }
+]
