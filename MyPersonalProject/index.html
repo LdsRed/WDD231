@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/section-news.js" defer></script>
+        <script src="scripts/latest-posts.js" defer></script>
         <script async src="scripts/app.js" defer></script>
         <link rel="icon" href="images/icons8-arch-linux-color-96.png">
         <title>The Linux Blog</title>
@@ -59,7 +60,7 @@
                     <nav class="navbar">
                         <ul>
                             <li>
-                                <a>Home</a>
+                                <a href="index.html" class="active">Home</a>
                             </li>
                             <li>
                                 <a>News</a>
@@ -68,7 +69,7 @@
                                 <a>Latest</a>
                             </li>
                             <li>
-                                <a>Join</a>
+                                <a href="join.html">Join</a>
                             </li>
                         </ul>
                     </nav>
@@ -82,13 +83,18 @@
 
 
     </header>
+
+
     <main>
+
+
         <div class="homepage-hero">
 
             <div class="hero-content">
-                <h2>The Linux Blog</h2>
-                <p>The GNU/Linux Chamber of Commerce is a directory of GNU/Linux users and organizations.
-                    It is a community driven project and is open to anyone who uses GNU/Linux.</p>
+                <h2 class="hero-title">The Linux Blog</h2>
+                <p class="hero-description">The Linux blog is the place where you will find useful
+                    information, and news about the GNU/Linux system and its different distributions.
+                </p>
                 <button class="btn">Subscribe</button>
             </div>
 
@@ -102,12 +108,9 @@
             <div class="news-container-items" id="news-container-items">
 
                 <div class="recent-news">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem
-                        blanditiis dolore itaque nisi quae qui quo similique sint temporibus! Delectus
-                        fugiat natus obcaecati quisquam rerum sed tenetur totam voluptatum!</p>
+                    <h3>Some of our Latest News</h3>
+                    <p>This sections will give you </p>
                 </div>
-
 
             </div>
         </div>
@@ -117,169 +120,64 @@
             <div class="latest-post-table">
 
 
-                <div class="latest-news">
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="article-container">
-                        <div class="article-grid">
-
-                            <div class="article-img">
-                                <img alt="" src="" width="100" height="100" loading="lazy">
-                            </div>
-
-                            <div class="article-text">
-                                <h4> Title </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
+                <div class="latest-news" id="latest-news"></div>
 
                 <div class="the-most-commented-section">
 
+                    <div class="commented-section-title">
+                        <span>The most Commented Posts</span>
+                    </div>
+
+
                     <div class="the-most-commented-container">
 
-                        <article class="article-container">
-                            <div class="article-grid grid-colum">
-                                <h4>Title</h4>
+                        <article class="comments-article-container">
+                            <div>
+                                <span></span>
+                            </div>
+
+                            <div class="">
                                 <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
+                                    <p>Is Linux on PC a good choice? As good as Windows or Mac? AI responds</p>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="article-container">
+                        <article class="comments-article-container">
                             <div class="article-grid">
-                                <h4>Title</h4>
+
                                 <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
+                                    <p>Firefox improves permission management, cookie security and adds support for linking snippets</p>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="article-container">
+                        <article class="comments-article-container">
                             <div class="article-grid">
-                                <h4>Title</h4>
                                 <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
+                                    <p>Valve and Arch Linux announce collaboration to improve distribution infrastructure</p>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="article-container">
+                        <article class="comments-article-container">
                             <div class="article-grid">
-                                <h4>Title</h4>
+
                                 <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
+                                    <p>Manjaro 24.1 comes with Linux 6.10, GNOME 46, KDE Plasma 6.1 and more</p>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="article-container">
+                        <article class="comments-article-container">
                             <div class="article-grid">
-                                <h4>Title</h4>
+
                                 <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
+                                    <p>Valve takes a step forward and proposes changes to accelerate the development of Wayland</p>
                                 </div>
                             </div>
                         </article>
 
-                        <article class="article-container">
-                            <div class="article-grid">
-                                <h4>Title</h4>
-                                <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="article-container">
-                            <div class="article-grid">
-                                <h4>Title</h4>
-                                <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="article-container">
-                            <div class="article-grid">
-                                <h4>Title</h4>
-                                <div class="article-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda delectus dicta doloremque facere harum labore minima molestias nam necessitatibus neque nostrum optio perspiciatis praesentium, quis quos rem soluta veniam.</p>
-                                </div>
-                            </div>
-                        </article>
 
                     </div>
 

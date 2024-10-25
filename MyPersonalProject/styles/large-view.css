@@ -8,6 +8,8 @@
     .navbar-container {
         display: none;
     }
+
+
 }
 
 @media (min-width: 768px) {
@@ -46,10 +48,10 @@
     }
 
 
-    /* Hero content*/
+    /*===================== HERO SECTION ==============================*/
     .homepage-hero {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
     }
 

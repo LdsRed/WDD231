@@ -1,0 +1,60 @@
+[
+  {
+    "subtitle": "Article",
+    "alt": "Available ubuntu 24.10",
+    "title": "Available Ubuntu 24.10 with GNOME 47, Plasma 6.1, Wayland with NVIDIA and more",
+    "url": "Ubuntu.jpg",
+    "date": "October 2 - 2024",
+    "author": "Timothy Soren"
+  },
+  {
+    "subtitle": "Article",
+    "alt": "KDE Plasma 6.2",
+    "title": "KDE Plasma 6.2, an upgrade for the love of art... and autonomys",
+    "url": "kdeplasma.png",
+    "date": "October 5 - 2024",
+    "author": "Jonny Clerck"
+  },
+  {
+    "subtitle": "Article",
+    "alt": "Aeon Desktop",
+    "title":"Aeon Desktop, an immutable desktop system with huge potential",
+    "url": "aeon.png",
+    "date": "October 6 - 2024",
+    "author": "Jonny Clerck"
+  },
+  {
+    "subtitle": "Article",
+    "alt": "Is linux a good choice?",
+    "title":"Is Linux on PC a good choice? As good as Windows or Mac? AI responds",
+    "url":"linuxai.jpg",
+    "date": "October 7 - 2024",
+    "author": "Timothy Soren"
+  },
+  {
+    "subtitle":"Article",
+    "alt": "Arch Linux collaboration",
+    "title":"Valve and Arch Linux announce collaboration to improve distribution infrastructure",
+    "url": "archlinux.png",
+    "date": "October 8 - 2024",
+    "author": "Timothy Soren"
+  },
+  {
+    "subtitle":"Article",
+    "alt": "Firefox Improvements",
+    "title":"Firefox improves permission management, cookie security and adds support for linking snippets",
+    "url": "firefox.jpg",
+    "date": "October 9 - 2024",
+    "author": "Jonny Clerck"
+  },
+  {
+    "subtitle": "Article",
+    "alt": "Manjaro 24.1",
+    "title":"Manjaro 24.1 comes with Linux 6.10, GNOME 46, KDE Plasma 6.1 and more",
+    "url": "manjaro.png",
+    "date": "October 10 - 2024",
+    "author": "Jonny Clerck"
+  }
+
+
+]
