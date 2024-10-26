@@ -1,115 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="description" content="Member Directory for the GNU/Linux Chamber of Commerce" >
-        <meta name="author" content="Jordan E. Larcher">
-        <meta property="og:title" content="GNU/Linux Chamber of Commerce">
-        <meta property="og:description" content="Member Directory for the GNU/Linux Chamber of Commerce">
-        <meta property="og:image" content="https://github.com/LdsRed/wdd231/blob/main/chamber/images/brand_gnu_icon_157944.svg">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://ldsred.github.io/wdd231/chamber/directory.html">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/large-view.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts/section-news.js" defer></script>
-        <script src="scripts/latest-posts.js" defer></script>
-        <script async src="scripts/app.js" defer></script>
-        <link rel="icon" href="images/icons8-arch-linux-color-96.png">
-        <title>The Linux Blog</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Member Directory for the GNU/Linux Chamber of Commerce" >
+    <meta name="author" content="Jordan E. Larcher">
+    <meta property="og:title" content="GNU/Linux Chamber of Commerce">
+    <meta property="og:description" content="Member Directory for the GNU/Linux Chamber of Commerce">
+    <meta property="og:image" content="https://github.com/LdsRed/wdd231/blob/main/chamber/images/brand_gnu_icon_157944.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ldsred.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/section-news.js" defer></script>
+    <script src="scripts/latest-posts.js" defer></script>
+    <script async src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/icons8-arch-linux-color-96.png">
+    <title>The Linux Blog</title>
+</head>
 <body>
     <header>
-        <div class="box-header">
-            <div class="icon-menu">
-                <img src="images/open-menu2.png" alt="Icon menu" id="icon-menu">
+
+        <div class="icon-menu">
+            <button id="icon-menu" class="menu-icon">&#9776;</button>
+        </div>
+        <div class="content-menu active" id="menu">
+            <ul>
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </div>
+
+        <div class="header-container">
+            <div class="header-logo">
+                <a target="_blank" href="https://icons8.com/icon/uIXgLv5iSlLJ/arch-linux">
+                    <div class="logo">
+                        <img src="images/brand_gnu_icon_157944.svg" width="75" height="75" alt="GNU/Linux Chamber of Commerce logo">
+                    </div>
+                </a>
             </div>
-            <div class="content-menu active" id="menu">
-                <ul>
-                    <li>Home</li>
-                    <li>Learn</li>
-                    <li>Contact</li>
-                    <li>About Us</li>
-                    <li>Join</li>
+
+            <div class="header-title">
+                <h1 class="no-margin">The Linux Blog </h1>
+            </div>
+        </div>
+
+        <div class="topnav-container">
+            <nav class="topnav" id="myTopnav">
+                <ul id="main-menu" class="main-menu">
+                    <li><a class="active2" href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="articles.html">Articles</a></li>
                 </ul>
-            </div>
-
-
-            <div class="brand-logo-navbar-container">
-
-                <div class="brand-logo-container">
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <div class="logo">
-                                <img src="images/brand-logo.svg" width="75" height="75" alt="GNU/Linux Chamber of Commerce logo">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="header-title">
-                        <h1 class="no-margin">The Linux Blog</h1>
-                    </div>
-                </div>
-
-                <div class="navbar-container">
-                    <nav class="navbar">
-                        <ul>
-                            <li>
-                                <a href="index.html" class="active">Home</a>
-                            </li>
-                            <li>
-                                <a>News</a>
-                            </li>
-                            <li>
-                                <a>Latest</a>
-                            </li>
-                            <li>
-                                <a href="join.html">Join</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="subscribe-button-container">
-                <button type="submit" class="subscribe-button">Subscribe</button>
-            </div>
+            </nav>
         </div>
 
 
     </header>
-
-
     <main>
-
-
-        <div class="homepage-hero">
-
-            <div class="hero-content">
+        <div class="hero-container flex flex-col"> 
+            <div class="hero-content flex flex-col">
                 <h2 class="hero-title">The Linux Blog</h2>
-                <p class="hero-description">The Linux blog is the place where you will find useful
-                    information, and news about the GNU/Linux system and its different distributions.
-                </p>
-                <button class="btn">Subscribe</button>
+                <div class="hero-description">
+                    The Linux blog is where you can find information about
+                    popular open source projects, Linux distributions and more!
+                </div>
+                <form class="form-subscription" method="GET" action="join.html">
+                    <button class="btn uppercase" type="submit">Subscribe</button>
+                </form>
             </div>
-
-            <div class="hero-img-container">
+            <figure>
                 <img src="images/homepage-featured-image.webp" alt="">
-            </div>
+            </figure>
         </div>
 
         <div class="news-container">
 
             <div class="news-container-items" id="news-container-items">
 
-                <div class="recent-news">
-                    <h3>Some of our Latest News</h3>
-                    <p>This sections will give you </p>
+                <div class="recent-news-container">
+
+
+                    <img src="images/parrot-os.jpg" alt="Parrot OS Linux">
+
+
+                    <div class="recent-news-content">
+                        <h3>Parrot 6.2: the security distribution is built with Docker</h3>
+                    </div>
                 </div>
 
             </div>
@@ -132,11 +117,11 @@
                     <div class="the-most-commented-container">
 
                         <article class="comments-article-container">
-                            <div>
-                                <span></span>
+                            <div class="article-number">
+                                <span>1</span>
                             </div>
 
-                            <div class="">
+                            <div class="article-text-container">
                                 <div class="article-text">
                                     <p>Is Linux on PC a good choice? As good as Windows or Mac? AI responds</p>
                                 </div>
@@ -144,7 +129,12 @@
                         </article>
 
                         <article class="comments-article-container">
-                            <div class="article-grid">
+
+                            <div class="article-number">
+                                <span>2</span>
+                            </div>
+
+                            <div class="article-text-container">
 
                                 <div class="article-text">
                                     <p>Firefox improves permission management, cookie security and adds support for linking snippets</p>
@@ -153,7 +143,12 @@
                         </article>
 
                         <article class="comments-article-container">
-                            <div class="article-grid">
+
+                            <div class="article-number">
+                                <span>3</span>
+                            </div>
+
+                            <div class="article-text-container">
                                 <div class="article-text">
                                     <p>Valve and Arch Linux announce collaboration to improve distribution infrastructure</p>
                                 </div>
@@ -161,7 +156,12 @@
                         </article>
 
                         <article class="comments-article-container">
-                            <div class="article-grid">
+
+                            <div class="article-number">
+                                <span>4</span>
+                            </div>
+
+                            <div class="article-text-container">
 
                                 <div class="article-text">
                                     <p>Manjaro 24.1 comes with Linux 6.10, GNOME 46, KDE Plasma 6.1 and more</p>
@@ -170,7 +170,12 @@
                         </article>
 
                         <article class="comments-article-container">
-                            <div class="article-grid">
+
+                            <div class="article-number">
+                                <span>5</span>
+                            </div>
+
+                            <div class="article-text-container">
 
                                 <div class="article-text">
                                     <p>Valve takes a step forward and proposes changes to accelerate the development of Wayland</p>
@@ -186,14 +191,14 @@
 
         </div>
 
+        
     </main>
-
 
     <footer>
         <div class="contact-info">
-            <p>GNU/Linux Chamber Of Commerce</p>
+            <p>The Linux Blog</p>
             <p>Galatas 1:5</p>
-            <p>Far Far Away</p>
+            <p>Argentina, Chaco</p>
             <p>myinfo@gnulinux.com</p>
             <p>(54)3482201639</p>
         </div>
@@ -213,7 +218,7 @@
         <div class="course-info">
             <p>WDD231 Class Project</p>
             <p>Jordan Larcher</p>
-            <p>© <span id="currentyear"></span> GNU/Linux Chamber Of Commerce</p>
+            <p>© <span id="currentyear"></span>The Linux Blog</p>
             <p id="lastModified"></p>
         </div>
     </footer>
