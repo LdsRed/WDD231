@@ -11,7 +11,16 @@ async function loadLatestPosts() {
 
 function renderLatestPosts(data) {
     //latestNewsContainer.innerHTML = '';
+    const showMoreBtnContainer = document.createElement("div");
+    const linkedPage = document.createElement("a");
+    showMoreBtnContainer.classList.add("show-more-btn-container");
 
+    linkedPage.classList.add("linked");
+    linkedPage.setAttribute("href","./articles.html")
+
+    linkedPage.innerHTML = `
+        <button class="btn show-more-btn" type="submit">SHOW MORE</button>
+        `;
 
     data.forEach((item) => {
         const articleContainer = document.createElement("article");
@@ -34,6 +43,9 @@ function renderLatestPosts(data) {
 
         latestNewsContainer.appendChild(articleContainer);
     });
+
+    showMoreBtnContainer.appendChild(linkedPage)
+    latestNewsContainer.appendChild(showMoreBtnContainer);
 }
 
 

@@ -340,7 +340,9 @@ h1 {
     font-weight: 700;
     border: none;
     line-height: 1;
-    letter-spacing: calc(1rem * .025)
+    letter-spacing: calc(1rem * .025);
+    border-radius: 5px;
+
 }
 
 figure {
@@ -424,6 +426,15 @@ figure img {
     border-radius: 5px;
 }
 
+.show-more-btn{
+    width: 300px;
+    cursor: pointer;
+}
+
+.show-more-btn-container {
+    text-align: center;
+    margin: 40px;
+}
 
 /*==========================================LATEST POSTS CONTAINER===============================*/
 
@@ -492,6 +503,10 @@ figure img {
 
 
 /*==========================================THE MOST COMMENTED SECTION  ===============================*/
+
+.the-most-commented-container{
+    border-bottom: 1px solid black;
+}
 
 .the-most-commented-section {
     margin-top: 40px;
@@ -1078,4 +1093,46 @@ section img {
 .picture-container p {
     line-height: 1.4;
     font-size: large;
+}
+
+
+/*===================================== GEOLOCATION CONTAINER ==========================*/
+.geolocation {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.geolocation h4 {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px ;
+}
+
+.geolocation ul {
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--header-footer-color);
+
+}
+
+.geolocation ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.geolocation ul li span {
+    font-weight: bold;
+}
+
+.awards p{
+    padding: 10px;
+}
+
+.awards {
+    border: 1px solid var(--header-footer-color);
+    border-radius: 5px;
+    margin: 20px;
+    line-height: 1.4;
 }

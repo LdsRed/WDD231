@@ -1,5 +1,13 @@
 const memberJSON = './data/members.json';
 const membersContainer = document.querySelector(".members-container");
+const listView = document.querySelector('#list-view');
+
+//Toggle List View
+listView.addEventListener('click', () =>{
+    membersContainer.classList.toggle('list');
+});
+
+
 
 async function fetchMembers(){
     const response = await fetch(memberJSON);
