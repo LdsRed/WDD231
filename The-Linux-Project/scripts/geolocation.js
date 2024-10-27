@@ -1,11 +1,13 @@
 const key = "a3554f8ce263449d90d9ce56855d0f3d";
-const geolocationURL = `https://api.ipgeolocation.io/ipgeo?apiKey=${key}`;
+const geolocationURL = "https://api.ipgeolocation.io";
+
+
 const geolocationContainer = document.getElementById('geolocation');
 
 async function getGeolocationData() {
 
     try {
-        const response = await fetch(geolocationURL);
+        const response = await fetch(`${geolocationURL}/ipgeo?apiKey=${key}`);
         const data = await response.json();
         displayGeolocationDetails(data);
     }catch (error) {
